@@ -93,7 +93,7 @@ const Signin = ({ history }) => {
       <div className="col-md-6 offset-md-3 vh-100">
         <ToastContainer />
         {isAuth() ? <Redirect to="/" /> : null}
-        <h1 className="p-5 text-center ">Opportunity Tracker</h1>
+        <h1 className="p-5 text-center ">Sathyabama Event Tracker</h1>
 
         {signinForm()}
         <Google text="Login With Google" informParent={informParent}/>

@@ -19,7 +19,7 @@ const Layout = ({ children, match, history }) => {
       <ul className=" d-flex nav nav-tabs bg-light">
         <li className="nav-item flex-grow-1 ">
           <Link to="/" className=" nav-link my-2 fs-5 text-dark" >
-            Opportunity Tracker
+            Sathyabama Event Tracker
           </Link>
         </li>
 

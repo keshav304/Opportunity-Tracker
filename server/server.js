@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 
 
 if(process.env.NODE_ENV='development'){
-    app.use(cors({origin:`${process.env.CLIENT_URL}`}));
+    app.use(cors());
 }
 
 
@@ -32,8 +32,6 @@ app.use('/api',postRoutes)
 // connecting to database
 const CONNECTION_URL = process.env.CONNECTION_URL
 const PORT = process.env.PORT|| 8000;
-
-
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
   .then(() => app.listen(PORT, () => console.log(`Server Running on PORT: http://localhost:${PORT}`)))

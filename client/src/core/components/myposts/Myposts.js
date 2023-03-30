@@ -15,6 +15,7 @@ const Myposts = (props) => {
   const [myPosts, setMyPosts] = useState([]);
 
   const userId = isAuth()._id;
+  console.log({userId})
   const getPosts = async () => {
     try {
       const posts = await axios.get(
